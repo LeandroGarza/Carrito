@@ -1,0 +1,9 @@
+.label-error{
+    font: size 12px;
+    color: red;
+}
+
+.label-alert{
+    color:red;
+    font-size: 14 px;
+}
