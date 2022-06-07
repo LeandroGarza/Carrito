@@ -57,6 +57,7 @@ class Login extends Component{
         }
     }
 
+    //interfaz grafica del login
     render(){
         return(
             <div className="App">

@@ -7,6 +7,8 @@ import Cookies from 'universal-cookie'
 const cookies = new Cookies();
 
 export default class NavbarComps extends Component {
+
+    //al cerrar sesion, saca los datos del usuario de ispeccion>>consola
     cerrarSesion=()=>{
         cookies.remove('id', {path: "/"});
         cookies.remove('apellido_paterno', {path: "/"});
@@ -16,14 +18,13 @@ export default class NavbarComps extends Component {
         window.location.href='./';
     }
 
-
     render() {
         
         return (
             <div>
                 <Navbar bg="light" expand="lg">
                     <Container fluid>
-                        <img src={bicilogo} class="logo" />
+                        <img src={bicilogo} class="logo" alt = "logo de la bici"/>
                         <Navbar.Toggle aria-controls="navbarScroll" />
                         <Navbar.Collapse id="navbarScroll">
                             <Nav
@@ -31,7 +32,6 @@ export default class NavbarComps extends Component {
                                 style={{ maxHeight: '100px' }}
                                 navbarScroll
                             >
-                                <Nav.Link href="#action1">Inicio</Nav.Link>
                                 <Nav.Link href="#action2">Bicicletas</Nav.Link>
                                 <NavDropdown title="Carrito" id="navbarScrollingDropdown">
                                     <Nav.Link href="#" >
