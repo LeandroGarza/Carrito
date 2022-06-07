@@ -1,0 +1,29 @@
+.button{
+    color: white;
+    width: 8rem;
+    height: 3rem;
+    background-color: #02c6fc;
+    border-radius: 1rem;
+    margin-top: 20px;
+  }
+  .button:hover{
+    background-color: white;
+    opacity: .9;
+    color:black;
+  
+  
+  }
+
+  .logo{
+      width: 100px;
+  }
+  .cerrar_sesion{
+      border-radius: 1rem;
+      background-color: white;
+  }
+  .cerrar_sesion:hover{
+      background-color: red  }
+    
+  .bici1{
+  height: 13.5rem;
+  }    
